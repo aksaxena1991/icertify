@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>iCertify | Latest practice questions for free</title>
+  <link rel="shortcut icon" href="assets/img/favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="./assets/css/theme.min.css">
+  <link rel="stylesheet" href="./assets/css/custom.css">
+</head>
+
+
+<body>
+
+  <!-- ========== HEADER ========== -->
+  <header id="header" class="navbar navbar-expand-lg navbar-end sticky-top navbar-light bg-light">
+      <div class="container">
+        <nav class="js-mega-menu navbar-nav-wrap">
+          <a class="navbar-brand" href="index.html" aria-label="Front">
+            <img class="navbar-brand-logo" src="./assets/img/logo.webp" alt="Logo">
+          </a>
+          <div class="navbar-nav-wrap-secondary-content">
+            <div class="dropdown dropdown-course-search d-lg-none d-inline-block">
+              <a class="btn btn-ghost-secondary btn-sm btn-icon" href="#" id="navbarCourseSearchDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                <i class="bi-search"></i>
+              </a>
+              <div class="dropdown-menu dropdown-card" aria-labelledby="navbarCourseSearchDropdown">
+                <div class="card card-sm">
+                  <div class="card-body">
+                    <form class="input-group input-group-merge">
+                      <input type="text" class="form-control" placeholder="What do you want to learn?" aria-label="What do you want to learn?">
+                      <div class="input-group-append input-group-text">
+                        <i class="bi-search"></i>
+                      </div>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="dropdown">
+              <button class="btn btn-primary btn-sm" type="button" data-bs-toggle="modal" data-bs-target="#signupModal">
+                <span class="d-none d-lg-inline-block"><i class="bi bi-key"></i> Login</span>
+              </button>
+              <a href="#" id="userLoggedIn" class="" role="button" data-bs-toggle="dropdown" aria-expanded="false" data-bs-dropdown-animation="" class="">
+                <span class="avatar avatar-sm avatar-dark avatar-circle">
+                  <span class="avatar-initials">MAK</span>
+                </span>
+              </a>
+
+              <div class="dropdown-menu dropdown-menu-end" aria-labelledby="userLoggedIn" style="min-width: 16rem; opacity: 1;">
+                <a class="d-flex align-items-center p-2" href="#">
+                  <div class="flex-grow-1 ms-3">
+                    <span class="d-block fw-semi-bold">Mohammad Adnan Khan</span>
+                    <span class="d-block text-muted small">imak8414@gmail.com</span>
+                  </div>
+                </a>
+
+                <div class="dropdown-divider my-3"></div>
+                <h5 class="ps-3">Purchased Courses</h5>
+                <a class="dropdown-item" href="dashboard.html">
+                  <img src="assets/img/course/az-900/az-900.webp" alt="" class="avatar">
+                  <span>AZ-900 : Microsoft Azure Fundamentals</span>
+                </a>
+                <a class="dropdown-item" href="dashboard.html">
+                  <img src="assets/img/course/az-900/az-900.webp" alt="" class="avatar">
+                  <span>AZ-900 : Microsoft Azure Fundamentals</span>
+                </a>
+                <a class="dropdown-item" href="dashboard.html">
+                  <img src="assets/img/course/az-900/az-900.webp" alt="" class="avatar">
+                  <span>AZ-900 : Microsoft Azure Fundamentals</span>
+                </a>
+                <a class="dropdown-item" href="dashboard.html">
+                  <img src="assets/img/course/az-900/az-900.webp" alt="" class="avatar">
+                  <span>AZ-900 : Microsoft Azure Fundamentals</span>
+                </a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="account.html">
+                  <span class="dropdown-item-icon">
+                    <i class="bi-person"></i>
+                  </span> Account
+                </a>
+                <a class="dropdown-item" href="dashboard.html">
+                  <span class="dropdown-item-icon">
+                    <i class="bi-box-arrow-right"></i>
+                  </span> Log out
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-default">
+              <i class="bi-list"></i>
+            </span>
+            <span class="navbar-toggler-toggled">
+              <i class="bi-x"></i>
+            </span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+
+              <li class="hs-has-sub-menu nav-item">
+                <a id="coursesMegaMenu" class="hs-mega-menu-invoker nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"><i class="bi-journals me-2"></i> Free Practice Tests</a>
+                <div class="hs-sub-menu dropdown-menu hs-sub-menu-desktop-lg animated" aria-labelledby="coursesMegaMenu" style="min-width: 17rem; animation-duration: 300ms; display: none;">
+                  <div class="hs-has-sub-menu nav-item">
+                    <a id="developmentMegaMenu" class="hs-mega-menu-invoker dropdown-item dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Microsoft</a>
+                    <div class="hs-sub-menu dropdown-menu hs-sub-menu-desktop-lg animated" aria-labelledby="developmentMegaMenu" style="min-width: 14rem; animation-duration: 300ms; display: none;">
+                      <a class="dropdown-item" href="az-900-microsoft-azure-fundamentals-free-practice-tests.html"> AZ-900 : Microsoft Azure fundamentals</a>
+                      <a class="dropdown-item" href="az-900-microsoft-azure-fundamentals-free-practice-tests.html">AZ-104 : Microsoft Azure Administrator</a>
+                    </div>
+                  </div>
+                  <div class="hs-has-sub-menu nav-item">
+                    <a id="developmentMegaMenu" class="hs-mega-menu-invoker dropdown-item dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">AWS</a>
+
+                    <div class="hs-sub-menu dropdown-menu" aria-labelledby="developmentMegaMenu" width="50" style="min-width: 14rem;">
+                      <a class="dropdown-item" href="az-900-microsoft-azure-fundamentals-free-practice-tests.html">AWS Certified Cloud Practitioner</a>
+                      <a class="dropdown-item" href="az-900-microsoft-azure-fundamentals-free-practice-tests.html">AWS Certified Solutions Architect Associate <span class="badge bg-primary rounded-pill ms-1">(SAA-C02)</span> <span class="course-code"></span></a>
+                    </div>
+                  </div>
+                </div>
+              </li>
+
+              <li class="nav-item flex-grow-1 d-none d-lg-inline-block">
+                <form class="input-group input-group-merge w-75">
+                  <div class="input-group-prepend input-group-text">
+                    <i class="bi-search"></i>
+                  </div>
+                  <input type="text" class="form-control" placeholder="What do you want to learn?" aria-label="What do you want to learn?">
+                </form>
+              </li>
+
+            </ul>
+          </div>
+        </nav>
+      </div>
+    </header>
+  <!-- ========== END HEADER ========== -->
+
+  <!-- ========== MAIN CONTENT ========== -->
+  <main id="content" role="main">
+    <!-- Content -->
+    <div class="container content-space-3 content-space-lg-1">
+      <!-- Card -->
+      <div class="card card-lg">
+        <!-- Header -->
+        <div class="card-header bg-dark py-sm-10">
+          <h1 class="card-title h2 text-white">Refund &amp; Policy</h1>
+          <p class="card-text text-white">Last modified: March 27, 2018 (view archived versions)</p>
+        </div>
+        <!-- End Header -->
+
+        <!-- Card Body -->
+        <div class="card-body">
+          <div class="mb-7">
+            <h4>Introduction</h4>
+
+            <p>Thanks for using our products and services ("Services"). The Services are provided by Pixeel Ltd. ("Space"), located at 153 Williamson Plaza, Maggieberg, MT 09514, England, United Kingdom.</p>
+
+            <p>By using our Services, you are agreeing to these terms. Please read them carefully.</p>
+
+            <p>Our Services are very diverse, so sometimes additional terms or product requirements (including age requirements) may apply. Additional terms will be available with the relevant Services, and those additional terms become part of your agreement with us if you use those Services.</p>
+          </div>
+
+          <div class="mb-7">
+            <h4>Using our services</h4>
+
+            <p>You must follow any policies made available to you within the Services.</p>
+
+            <p>Don't misuse our Services. For example, don't interfere with our Services or try to access them using a method other than the interface and the instructions that we provide. You may use our Services only as permitted by law, including applicable export and re-export control laws and regulations. We may suspend or stop providing our Services to you if you do not comply with our terms or policies or if we are investigating suspected misconduct.</p>
+
+            <p>Using our Services does not give you ownership of any intellectual property rights in our Services or the content you access. You may not use content from our Services unless you obtain permission from its owner or are otherwise permitted by law. These terms do not grant you the right to use any branding or logos used in our Services. Don't remove, obscure, or alter any legal notices displayed in or along with our Services.</p>
+          </div>
+
+          <div class="mb-7">
+            <h4>Privacy and copyright protection</h4>
+
+            <p>Space's privacy policies explain how we treat your personal data and protect your privacy when you use our Services. By using our Services, you agree that Space can use such data in accordance with our privacy policies.</p>
+
+            <p>We respond to notices of alleged copyright infringement and terminate accounts of repeat infringers according to the process set out in the U.S. Digital Millennium Copyright Act.</p>
+
+            <p>We provide information to help copyright holders manage their intellectual property online. If you think somebody is violating your copyrights and want to notify us, you can find information about submitting notices and Space's policy about responding to notices in our Help Center.</p>
+          </div>
+
+          <div class="mb-7">
+            <h4>Your content in our services</h4>
+
+            <p>Some of our Services allow you to upload, submit, store, send or receive content. You retain ownership of any intellectual property rights that you hold in that content. In short, what belongs to you stays yours.</p>
+
+            <p>When you upload, submit, store, send or receive content to or through our Services, you give Space (and those we work with) a worldwide license to use, host, store, reproduce, modify, create derivative works (such as those resulting from translations, adaptations or other changes we make so that your content works better with our Services), communicate, publish, publicly perform, publicly display and distribute such content. The rights you grant in this license are for the limited purpose of operating, promoting, and improving our Services, and to develop new ones. This license continues even if you stop using our Services (for example, for a business listing you have added to Space Maps). Some Services may offer you ways to access and remove content that has been provided to that Service. Also, in some of our Services, there are terms or settings that narrow the scope of our use of the content submitted in those Services. Make sure you have the necessary rights to grant us this license for any content that you submit to our Services.</p>
+          </div>
+        </div>
+        <!-- End Card Body -->
+      </div>
+      <!-- End Card -->
+    </div>
+    <!-- End Content -->
+  </main>
+  <!-- ========== END MAIN CONTENT ========== -->
+
+  <!-- ========== FOOTER ========== -->
+  <footer class="bg-dark">
+    <div class="container pb-1 pb-lg-5">
+      <div class="row content-space-t-2">
+        <div class="col-lg-4 mb-7 mb-lg-0">
+          <div class="mb-5">
+            <a class="navbar-brand" href="./index.html" aria-label="Space">
+              <img class="navbar-brand-logo" src="./assets/img/logo.webp" alt="Image Description">
+            </a>
+          </div>
+          <ul class="list-unstyled list-py-1">
+            <li><a class="link-sm link-light" href="about.html">About Us</a></li>
+            <li><a class="link-sm link-light" href="terms-and-conditions.html">Terms &amp; Conditions</a></li>
+            <li><a class="link-sm link-light" href="refund-policy.html">Refund Policy</a></li>
+            <li><a class="link-sm link-light" href="privacy-policy.html">Privacy Policy</a></li>
+            <li><a class="link-sm link-light" href="contact.html">Contact Us</a></li>
+          </ul>
+          <ul class="list-inline mb-0">
+            <li class="list-inline-item">
+              <a class="btn btn-soft-light btn-xs btn-icon" href="#">
+                <i class="bi-facebook"></i>
+              </a>
+            </li>
+            <li class="list-inline-item">
+              <a class="btn btn-soft-light btn-xs btn-icon" href="#">
+                <i class="bi-linkedin"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="col-lg-4 mb-7 mb-sm-0">
+          <h5 class="text-white mb-3">Microsoft Practice Tests</h5>
+          <ul class="list-unstyled list-py-1 mb-0">
+            <li><a class="link-sm link-light" href="#">AZ-900 : Microsoft Azure Fundamentals</a></li>
+            <li><a class="link-sm link-light" href="#">AZ-900 : Microsoft Azure Fundamentals</a></li>
+            <li><a class="link-sm link-light" href="#">AZ-900 : Microsoft Azure Fundamentals</a></li>
+            <li><a class="link-sm link-light" href="#">AZ-900 : Microsoft Azure Fundamentals</a></li>
+            <li><a class="link-sm link-light" href="#">AZ-900 : Microsoft Azure Fundamentals</a></li>
+            <li><a class="link-sm link-light" href="#">AZ-900 : Microsoft Azure Fundamentals</a></li>
+            <li><a class="link-sm link-light" href="#">AZ-900 : Microsoft Azure Fundamentals</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-4 mb-7 mb-sm-0">
+          <h5 class="text-white mb-3">AWS Practice Tests</h5>
+          <ul class="list-unstyled list-py-1 mb-0">
+            <li><a class="link-sm link-light" href="#">AWS Certified Cloud Practitioner </a></li>
+            <li><a class="link-sm link-light" href="#">AWS Certified Cloud Practitioner </a></li>
+            <li><a class="link-sm link-light" href="#">AWS Certified Cloud Practitioner </a></li>
+            <li><a class="link-sm link-light" href="#">AWS Certified Cloud Practitioner </a></li>
+            <li><a class="link-sm link-light" href="#">AWS Certified Cloud Practitioner </a></li>
+            <li><a class="link-sm link-light" href="#">AWS Certified Cloud Practitioner </a></li>
+            <li><a class="link-sm link-light" href="#">AWS Certified Cloud Practitioner </a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="border-top border-white-10 my-7"></div>
+      <div class="w-md-85 text-lg-center mx-lg-auto">
+        <p class="text-muted small">&copy; iCertify. 2021. All rights reserved.</p>
+        <p class="text-muted small">Disclaimer: We are not associated with Microsoft, Amazon Web Services or Google. The content presented on this site is not in any way related to respective vendors.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ========== END FOOTER ========== -->
+
+  <!-- ========== SECONDARY CONTENTS ========== -->
+  <!-- Login/Signup modals -->
+  <div class="modal fade" id="signupModal" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-close">
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+
+          <!-- Login Modal -->
+          <div id="signupModalFormLoginWithEmail">
+            <div class="text-center mb-7">
+              <h2>Log in</h2>
+              <p>Don't have an account yet?
+                <a class="js-animation-link link" href="javascript:;" role="button"
+                   data-hs-show-animation-options='{
+                         "targetSelector": "#signupModalFormSignup",
+                         "groupName": "idForm"
+                       }'>Sign up</a>
+              </p>
+            </div>
+            <form class="js-validate needs-validation" novalidate>
+              <div class="mb-3">
+                <label class="form-label" for="signupModalFormLoginEmail">Your email</label>
+                <input type="email" class="form-control form-control-lg" name="email" id="" placeholder="email@site.com" aria-label="email@site.com" required>
+                <span class="invalid-feedback">Please enter a valid email address.</span>
+              </div>
+              <div class="mb-3">
+                <div class="d-flex justify-content-between align-items-center">
+                  <label class="form-label" for="signupModalFormLoginPassword">Password</label>
+
+                  <a class="js-animation-link form-label-link" href="javascript:;"
+                     data-hs-show-animation-options='{
+                       "targetSelector": "#signupModalFormResetPassword",
+                       "groupName": "idForm"
+                     }'>Forgot Password?</a>
+                </div>
+
+                <input type="password" class="form-control form-control-lg" name="password" id="signupModalFormLoginPassword" placeholder="8+ characters required" aria-label="8+ characters required" required minlength="8">
+                <span class="invalid-feedback">Please enter a valid password.</span>
+              </div>
+              <div class="d-grid mb-3">
+                <a href="index.html" class="btn btn-primary form-control-lg">Log in</a>
+              </div>
+            </form>
+            <a class="btn btn-white btn-lg w-100" href="#">
+              <span class="d-flex justify-content-center align-items-center">
+                <img class="avatar avatar-xss me-2" src="./assets/svg/brands/google-icon.svg" alt="Image Description">
+                Log in with Google
+              </span>
+            </a>
+          </div>
+          <!-- End Login Modal -->
+
+          <!-- Sign up -->
+          <div id="signupModalFormSignup" style="display: none; opacity: 0;">
+            <div class="text-center mb-7">
+              <h2>Sign up</h2>
+              <p>Already have an account?
+                <a class="js-animation-link link" href="javascript:;" role="button"
+                   data-hs-show-animation-options='{
+                         "targetSelector": "#signupModalFormLoginWithEmail",
+                         "groupName": "idForm"
+                       }'>Log in</a>
+              </p>
+            </div>
+            <form class="js-validate need-validate" novalidate>
+              <div class="mb-3">
+                <label class="form-label" for="signupModalFormSignupEmail">Your email</label>
+                <input type="email" class="form-control form-control-lg" name="email" id="signupModalFormSignupEmail" placeholder="email@site.com" aria-label="email@site.com" required>
+                <span class="invalid-feedback">Please enter a valid email address.</span>
+              </div>
+              <div class="mb-3">
+                <label class="form-label" for="signupModalFormSignupPassword">Password</label>
+                <input type="password" class="form-control form-control-lg" name="password" id="signupModalFormSignupPassword" placeholder="8+ characters required" aria-label="8+ characters required" required>
+                <span class="invalid-feedback">Your password is invalid. Please try again.</span>
+              </div>
+              <div class="mb-3" data-hs-validation-validate-class>
+                <label class="form-label" for="signupModalFormSignupConfirmPassword">Confirm password</label>
+                <input type="password" class="form-control form-control-lg" name="confirmPassword" id="signupModalFormSignupConfirmPassword" placeholder="8+ characters required" aria-label="8+ characters required" required
+                       data-hs-validation-equal-field="#signupModalFormSignupPassword">
+                <span class="invalid-feedback">Password does not match the confirm password.</span>
+              </div>
+              <div class="mb-3">
+                <img src="assets/img/newCaptchaAnchor.gif" alt="" class="img-fluid">
+              </div>
+              <div class="d-grid mb-3">
+                <button type="submit" class="btn btn-primary form-control-lg">Sign up</button>
+              </div>
+            </form>
+            <div class="d-grid gap-3">
+              <a class="btn btn-white btn-lg" href="#">
+                <span class="d-flex justify-content-center align-items-center">
+                  <img class="avatar avatar-xss me-2" src="./assets/svg/brands/google-icon.svg" alt="Image Description">
+                  Sign up with Google
+                </span>
+              </a>
+              <div class="text-center">
+                <p class="small mb-0">By continuing you agree to our <a href="#">Terms and Conditions</a></p>
+              </div>
+            </div>
+          </div>
+          <!-- End Sign up -->
+
+          <!-- Reset Password -->
+          <div id="signupModalFormResetPassword" style="display: none; opacity: 0;">
+            <div class="text-center mb-7">
+              <h2>Forgot password?</h2>
+              <p>Enter the email address you used when you joined and we'll send you instructions to reset your password.</p>
+            </div>
+            <form class="js-validate need-validate" novalidate>
+              <div class="mb-3">
+                <div class="d-flex justify-content-between align-items-center">
+                  <label class="form-label" for="signupModalFormResetPasswordEmail" tabindex="0">Your email</label>
+                  <a class="js-animation-link form-label-link" href="javascript:;"
+                     data-hs-show-animation-options='{
+                         "targetSelector": "#signupModalFormLoginWithEmail",
+                         "groupName": "idForm"
+                       }'>
+                    <i class="bi-chevron-left small"></i> Back to Log in
+                  </a>
+                </div>
+                <input type="email" class="form-control form-control-lg" name="email" id="signupModalFormResetPasswordEmail" tabindex="1" placeholder="Enter your email address" aria-label="Enter your email address" required>
+                <span class="invalid-feedback">Please enter a valid email address.</span>
+              </div>
+
+              <div class="d-grid">
+                <button type="submit" class="btn btn-primary form-control-lg">Submit</button>
+              </div>
+            </form>
+          </div>
+          <!-- End Reset Password -->
+
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- End Login/Signup modals -->
+
+
+  <!-- Go To -->
+  <a class="js-go-to go-to position-fixed" href="javascript:;" style="visibility: hidden;"
+     data-hs-go-to-options='{
+       "offsetTop": 700,
+       "position": {
+         "init": {
+           "right": "2rem"
+         },
+         "show": {
+           "bottom": "2rem"
+         },
+         "hide": {
+           "bottom": "-2rem"
+         }
+       }
+     }'>
+    <i class="bi-chevron-up"></i>
+  </a>
+  <!-- ========== END SECONDARY CONTENTS ========== -->
+
+  <!-- JS Global Compulsory  -->
+  <script src="./assets/vendor/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- JS Implementing Plugins -->
+  <script src="./assets/vendor/hs-header/dist/hs-header.min.js"></script>
+  <script src="./assets/vendor/hs-mega-menu/dist/hs-mega-menu.min.js"></script>
+  <script src="./assets/vendor/hs-show-animation/dist/hs-show-animation.min.js"></script>
+  <script src="./assets/vendor/hs-go-to/dist/hs-go-to.min.js"></script>
+
+  <!-- JS Front -->
+  <script src="./assets/js/theme.min.js"></script>
+  <script src="./assets/js/custom.js"></script>
+  <!-- JS Plugins Init. -->
+
+</body>
+</html>

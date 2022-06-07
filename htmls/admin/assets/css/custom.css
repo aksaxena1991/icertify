@@ -1,0 +1,105 @@
+
+
+.course-meta .list-group-item{
+  border: none;
+  padding: 0;
+  margin-right: 5px;
+  margin-top: 5px;
+}
+
+.course-card .card-body{
+  padding: 1rem;
+}
+
+.course-stats-cont .course-stats {
+  background: #f5f8fa;
+}
+
+.course-stats-cont .course-stats:hover {
+  background: #fefefe;
+}
+
+.course-card .card:hover{
+  background: #EEEEEE;
+}
+
+.ck-editor{
+  width: 100% !important;
+}
+
+.nav-line-tabs .nav-item .nav-link {
+    padding: 1.2rem 0;
+    color: #181c32;
+}
+
+.nav-line-tabs.nav-line-tabs-2x .nav-item .nav-link.active, .nav-line-tabs.nav-line-tabs-2x .nav-item .nav-link:hover:not(.disabled), .nav-line-tabs.nav-line-tabs-2x .nav-item.show .nav-link {
+    border-bottom-width: 4px;
+    font-weight: 600;
+}
+
+.nav-line-tabs{
+  border-bottom: 0;
+}
+
+.rupee{
+  font-family: 'sans-serif' !important;
+}
+
+.header{
+    box-shadow: 0 1px 6px 0 rgb(32 33 36 / 28%) !important;
+}
+
+.br-4px{
+  border-radius: 4px;
+}
+
+@media (min-width: 992px){
+.header-fixed.toolbar-fixed .wrapper {
+    padding-top: calc(40px + var(--kt-toolbar-height));
+}
+}
+
+@media (max-width: 768px){
+  .modal-fullscreen .modal-content {
+      padding: 0 !important;
+  }
+  .offset-1{
+    margin-left: 0;
+  }
+}
+
+.accordion-item:not(:first-of-type) {
+    border-top: 1px solid #eff2f5;
+}
+.edit-test-toolbar{
+  width: 100%
+}
+
+.navbar-nav .nav-item{
+  margin-right: 80px;
+}
+
+.q-text{
+  white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: 820px;
+}
+
+.accordion-body .card-header{
+  min-height: 40px;
+}
+
+.answer-options textarea{
+  background: #fff !important;
+  border: 1px solid #eee !important;
+}
+
+.answer-options .input-group-text{
+  font-size: 18px;
+}
+
+.modal-fullscreen .modal-content{
+  padding: 0 25%;
+  background: #fafafa;
+}

@@ -1,0 +1,31 @@
+version: '3'
+services:
+  backend:
+    build: .
+    image: backend
+    environment:
+      - MONGODB_URL=mongodb://mongodb:27017/icertify
+    ports:
+      - '3000:3000'
+    depends_on:
+      - mongodb
+    volumes:
+      - .:/usr/src/backend
+    networks:
+      - node-network
+
+  mongodb:
+    image: mongo:4.2.1-bionic
+    ports:
+      - '27017:27017'
+    volumes:
+      - dbdata:/data/db
+    networks:
+      - node-network
+
+volumes:
+  dbdata:
+
+networks:
+  node-network:
+    driver: bridge

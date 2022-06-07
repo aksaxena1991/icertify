@@ -1,0 +1,877 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>iCertify | Latest practice questions for free</title>
+  <link rel="shortcut icon" href="assets/img/favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="./assets/css/theme.min.css">
+  <link rel="stylesheet" href="./assets/css/custom.css">
+  <link rel="stylesheet" href="./assets/css/typeahead.css">
+
+</head>
+
+<body>
+
+  <!-- ========== HEADER ========== -->
+  <header id="header" class="navbar navbar-expand-lg navbar-end sticky-top navbar-light bg-light">
+      <div class="container">
+        <nav class="js-mega-menu navbar-nav-wrap">
+          <a class="navbar-brand" href="index.html" aria-label="Front">
+            <img class="navbar-brand-logo" src="./assets/img/logo.webp" alt="Logo">
+          </a>
+          <div class="navbar-nav-wrap-secondary-content">
+            <div class="dropdown dropdown-course-search d-lg-none d-inline-block">
+              <a class="btn btn-ghost-secondary btn-sm btn-icon" href="#" id="navbarCourseSearchDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                <i class="bi-search"></i>
+              </a>
+              <div class="dropdown-menu dropdown-card" aria-labelledby="navbarCourseSearchDropdown">
+                <div class="card card-sm">
+                  <div class="card-body">
+                    <form class="input-group input-group-merge">
+                      <input type="text" class="form-control" placeholder="Enter exam code or name.." aria-label="Enter exam code or name..">
+                      <div class="input-group-append input-group-text">
+                        <i class="bi-search"></i>
+                      </div>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="dropdown">
+              <button class="btn btn-primary btn-sm" type="button" data-bs-toggle="modal" data-bs-target="#signupModal">
+                <span class="d-none d-lg-inline-block"><i class="bi bi-key"></i> Login</span>
+              </button>
+              <a href="#" id="userLoggedIn" class="" role="button" data-bs-toggle="dropdown" aria-expanded="false" data-bs-dropdown-animation="" class="">
+                <span class="avatar avatar-sm avatar-dark avatar-circle">
+                  <span class="avatar-initials">MAK</span>
+                </span>
+              </a>
+
+              <div class="dropdown-menu dropdown-menu-end" aria-labelledby="userLoggedIn" style="min-width: 16rem; opacity: 1;">
+                <a class="d-flex align-items-center p-2" href="#">
+                  <div class="flex-grow-1 ms-3">
+                    <span class="d-block fw-semi-bold">Mohammad Adnan Khan</span>
+                    <span class="d-block text-muted small">imak8414@gmail.com</span>
+                  </div>
+                </a>
+
+                <div class="dropdown-divider my-3"></div>
+                <h5 class="ps-3">Purchased Courses</h5>
+                <a class="dropdown-item" href="dashboard.html">
+                  <img src="assets/img/course/az-900-microsoft-azure-fundaments/az-900.webp" alt="" class="avatar">
+                  <span>AZ-900 : Microsoft Azure Fundamentals</span>
+                </a>
+                <a class="dropdown-item" href="dashboard.html">
+                  <img src="assets/img/course/az-900-microsoft-azure-fundamentals/az-900.webp" alt="" class="avatar">
+                  <span>AZ-900 : Microsoft Azure Fundamentals</span>
+                </a>
+                <a class="dropdown-item" href="dashboard.html">
+                  <img src="assets/img/course/az-900-microsoft-azure-fundamentals/az-900.webp" alt="" class="avatar">
+                  <span>AZ-900 : Microsoft Azure Fundamentals</span>
+                </a>
+                <a class="dropdown-item" href="dashboard.html">
+                  <img src="assets/img/course/az-900-microsoft-azure-fundamentals/az-900.webp" alt="" class="avatar">
+                  <span>AZ-900 : Microsoft Azure Fundamentals</span>
+                </a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="account.html">
+                  <span class="dropdown-item-icon">
+                    <i class="bi-person"></i>
+                  </span> Account
+                </a>
+                <a class="dropdown-item" href="#" data-bs-toggle="modal" data-bs-target="#contactUsModal">
+                  <span class="dropdown-item-icon">
+                    <i class="bi-person"></i>
+                  </span> Contact Us
+                </a>
+                <a class="dropdown-item" href="dashboard.html">
+                  <span class="dropdown-item-icon">
+                    <i class="bi-box-arrow-right"></i>
+                  </span> Log out
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-default">
+              <i class="bi-list"></i>
+            </span>
+            <span class="navbar-toggler-toggled">
+              <i class="bi-x"></i>
+            </span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+
+              <li class="hs-has-sub-menu nav-item">
+                <a id="coursesMegaMenu" class="hs-mega-menu-invoker nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"><i class="bi-journals me-2"></i> Free Practice Tests</a>
+                <div class="hs-sub-menu dropdown-menu hs-sub-menu-desktop-lg animated" aria-labelledby="coursesMegaMenu" style="min-width: 17rem; animation-duration: 300ms; display: none;">
+                  <div class="hs-has-sub-menu nav-item">
+                    <a id="developmentMegaMenu" class="hs-mega-menu-invoker dropdown-item dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Microsoft</a>
+                    <div class="hs-sub-menu dropdown-menu hs-sub-menu-desktop-lg animated" aria-labelledby="developmentMegaMenu" style="min-width: 14rem; animation-duration: 300ms; display: none;">
+                      <a class="dropdown-item" href="az-900-microsoft-azure-fundamentals-free-practice-tests.html"> AZ-900 : Microsoft Azure fundamentals</a>
+                      <a class="dropdown-item" href="az-900-microsoft-azure-fundamentals-free-practice-tests.html">AZ-104 : Microsoft Azure Administrator</a>
+                    </div>
+                  </div>
+                  <div class="hs-has-sub-menu nav-item">
+                    <a id="developmentMegaMenu" class="hs-mega-menu-invoker dropdown-item dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">AWS</a>
+
+                    <div class="hs-sub-menu dropdown-menu" aria-labelledby="developmentMegaMenu" width="50" style="min-width: 14rem;">
+                      <a class="dropdown-item" href="az-900-microsoft-azure-fundamentals-free-practice-tests.html">AWS Certified Cloud Practitioner</a>
+                      <a class="dropdown-item" href="az-900-microsoft-azure-fundamentals-free-practice-tests.html">AWS Certified Solutions Architect Associate <span class="badge bg-primary rounded-pill ms-1">(SAA-C02)</span> <span class="course-code"></span></a>
+                    </div>
+                  </div>
+                </div>
+              </li>
+
+              <li class="nav-item flex-grow-1 d-none d-lg-inline-block">
+                  <div class="justify-content-between align-items-center pe-lg-9 ">
+                    <div class="d-none d-md-block">
+                        <form id="courseSearch" name="courseSearch">
+                        <div class="typeahead__container">
+                            <div class="typeahead__field">
+                                <div class="typeahead__query">
+                                    <div class="input-group input-group-merge navbar-input-group">
+                                        <div class="input-group-prepend input-group-text">
+                                        <i class="bi-search"></i>
+                                      </div>
+                                      <input class="js-typeahead-course form-control" name="courseSearch" placeholder="Enter exam code or title" autocomplete="off">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+
+                    </div>
+                  </div>
+                </li>
+
+
+            </ul>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+  <!-- ========== END HEADER ========== -->
+
+
+  <!-- ========== HERO ========== -->
+  <div class="">
+    <div class="container content-space-2">
+      <div class="row justify-content-lg-between align-items-md-center">
+        <div class="col-md-6 col-lg-4 mb-7 mb-md-0">
+          <div class="mb-5">
+            <h2 class="display-5 mb-3">You cannot fail with our tests</h2>
+            <p class="lead">Practice our tests atleast twice, and pass the official exam(s) in the first attempt. Guaranteed.</p>
+          </div>
+        </div>
+        <div class="col-md-8">
+          <div class="position-relative">
+            <img class="img-fluid rounded-2" src="./assets/img/banner.jpeg" alt="Image Description">
+            <div class="position-absolute top-0 end-0 w-100 h-100 bg-soft-primary rounded-2 zi-n1 mt-5 me-n5"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- ========== END HERO ========== -->
+
+
+  <!-- ========== MAIN CONTENT ========== -->
+  <main id="content" role="main">
+
+    <!-- section 1-->
+    <div class="container content-space-1">
+      <div class="bg-light rounded-2">
+        <div class="container-xl content-space-1 container-fluid px-4 px-md-8">
+          <div class="px-3">
+            <div class="w-md-75 text-center mx-md-auto mb-5 mb-md-9">
+              <span class="text-cap">Always improving</span>
+              <h2 class="">Our tests are updated frequently to stay in sync with the official certification exam</h2>
+            </div>
+              <ul class="step step-md step-centered">
+                <li class="step-item">
+                  <div class="step-content-wrapper">
+                    <span class="step-icon step-icon-success"><i class="bi-check-circle text-white"></i></span>
+                    <div class="step-content">
+                      <h3>Real exam questions</h3>
+                      <p>We bring you the latest real exam questions that are updated twice every month.</p>
+                    </div>
+                  </div>
+                </li>
+                <li class="step-item">
+                  <div class="step-content-wrapper">
+                    <span class="step-icon step-icon-success"><i class="bi-check-circle text-white"></i></span>
+                    <div class="step-content">
+                      <h3>Verfied answers and detailed explanations</h3>
+                      <p>Answers are 100% verified by our certified team of experts.</p>
+                    </div>
+                  </div>
+                </li>
+                <li class="step-item">
+                  <div class="step-content-wrapper">
+                    <span class="step-icon step-icon-success"><i class="bi-check-circle text-white"></i></span>
+                    <div class="step-content">
+                      <h3>Test Engine</h3>
+                      <p>Practice mode allows you to check answers on the go. Exam mode is there to test you in a timed environment.</p>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- section 1 ends-->
+
+    <!-- section 2-->
+    <div class="container content-space-1">
+      <div class="w-md-75 text-center mx-md-auto mb-6">
+        <h2>Featured practice test courses</h2>
+        <p>Give it a try. It's FREE</p>
+      </div>
+      <div class="row row-cols-1 row-cols-sm-2 row-cols-lg-3">
+        <div class="col mb-5">
+          <div class="card card-bordered">
+            <div class="card-pinned">
+              <img class="card-img-top" src="./assets/svg/components/card-12.svg" alt="Image Description">
+              <div class="card-pinned-bottom-start">
+                <div class="d-flex align-items-center flex-wrap">
+                  <div class="d-flex gap-1">
+                    <img src="./assets/svg/illustrations/star.svg" alt="Review rating" width="16">
+                    <img src="./assets/svg/illustrations/star.svg" alt="Review rating" width="16">
+                    <img src="./assets/svg/illustrations/star.svg" alt="Review rating" width="16">
+                    <img src="./assets/svg/illustrations/star.svg" alt="Review rating" width="16">
+                    <img src="./assets/svg/illustrations/star.svg" alt="Review rating" width="16">
+                  </div>
+                  <div class="ms-1">
+                    <span class="fw-semi-bold text-white me-1">4.91</span>
+                    <span class="text-white-70">(1.5k+ reviews)</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card-body">
+              <div class="mb-3">
+                <h3 class="card-title">
+                  <span class="text-dark">AZ-900 : Microsoft Azure fundamentals</span>
+                </h3>
+              </div>
+              <div class="row align-items-center">
+                <div class="col-auto">
+                  <ul class="list-inline list-separator small ms-auto">
+                    <li class="list-inline-item">
+                      <i class="bi-book me-1"></i> 6 Tests
+                    </li>
+                    <li class="list-inline-item">
+                      <i class="bi-clock me-1"></i> 300 questions
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="card-footer pt-0">
+              <div class="d-flex justify-content-between align-items-center">
+                <a class="btn btn-primary btn-sm btn-transition" href="az-900-microsoft-azure-fundamentals-free-practice-tests.html">Course details</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col mb-5">
+          <div class="card card-bordered">
+            <div class="card-pinned">
+              <img class="card-img-top" src="./assets/svg/components/card-14.svg" alt="Image Description">
+              <div class="card-pinned-bottom-start">
+                <div class="d-flex align-items-center flex-wrap">
+                  <div class="d-flex gap-1">
+                    <img src="./assets/svg/illustrations/star.svg" alt="Review rating" width="16">
+                    <img src="./assets/svg/illustrations/star.svg" alt="Review rating" width="16">
+                    <img src="./assets/svg/illustrations/star.svg" alt="Review rating" width="16">
+                    <img src="./assets/svg/illustrations/star.svg" alt="Review rating" width="16">
+                    <img src="./assets/svg/illustrations/star.svg" alt="Review rating" width="16">
+                  </div>
+                  <div class="ms-1">
+                    <span class="fw-semi-bold text-white me-1">4.91</span>
+                    <span class="text-white-70">(1.5k+ reviews)</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card-body">
+              <div class="mb-3">
+                <h3 class="card-title">
+                  <span class="text-dark">AZ-900 : Microsoft Azure fundamentals</span>
+                </h3>
+              </div>
+              <div class="row align-items-center">
+                <div class="col-auto">
+                  <ul class="list-inline list-separator small ms-auto">
+                    <li class="list-inline-item">
+                      <i class="bi-book me-1"></i> 6 Tests
+                    </li>
+                    <li class="list-inline-item">
+                      <i class="bi-clock me-1"></i> 300 questions
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="card-footer pt-0">
+              <div class="d-flex justify-content-between align-items-center">
+                <a class="btn btn-primary btn-sm btn-transition" href="az-900-microsoft-azure-fundamentals-free-practice-tests.html">Course details</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col mb-5">
+          <div class="card card-bordered">
+            <div class="card-pinned">
+              <img class="card-img-top" src="./assets/svg/components/card-13.svg" alt="Image Description">
+              <div class="card-pinned-bottom-start">
+                <div class="d-flex align-items-center flex-wrap">
+                  <div class="d-flex gap-1">
+                    <img src="./assets/svg/illustrations/star.svg" alt="Review rating" width="16">
+                    <img src="./assets/svg/illustrations/star.svg" alt="Review rating" width="16">
+                    <img src="./assets/svg/illustrations/star.svg" alt="Review rating" width="16">
+                    <img src="./assets/svg/illustrations/star.svg" alt="Review rating" width="16">
+                    <img src="./assets/svg/illustrations/star.svg" alt="Review rating" width="16">
+                  </div>
+                  <div class="ms-1">
+                    <span class="fw-semi-bold text-white me-1">4.91</span>
+                    <span class="text-white-70">(1.5k+ reviews)</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card-body">
+              <div class="mb-3">
+                <h3 class="card-title">
+                  <span class="text-dark">AZ-900 : Microsoft Azure fundamentals</span>
+                </h3>
+              </div>
+              <div class="row align-items-center">
+                <div class="col-auto">
+                  <ul class="list-inline list-separator small ms-auto">
+                    <li class="list-inline-item">
+                      <i class="bi-book me-1"></i> 6 Tests
+                    </li>
+                    <li class="list-inline-item">
+                      <i class="bi-clock me-1"></i> 300 questions
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="card-footer pt-0">
+              <div class="d-flex justify-content-between align-items-center">
+                <a class="btn btn-primary btn-sm btn-transition" href="az-900-microsoft-azure-fundamentals-free-practice-tests.html">Course details</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col mb-5">
+          <div class="card card-bordered">
+            <div class="card-pinned">
+              <img class="card-img-top" src="./assets/svg/components/card-13.svg" alt="Image Description">
+              <div class="card-pinned-bottom-start">
+                <div class="d-flex align-items-center flex-wrap">
+                  <div class="d-flex gap-1">
+                    <img src="./assets/svg/illustrations/star.svg" alt="Review rating" width="16">
+                    <img src="./assets/svg/illustrations/star.svg" alt="Review rating" width="16">
+                    <img src="./assets/svg/illustrations/star.svg" alt="Review rating" width="16">
+                    <img src="./assets/svg/illustrations/star.svg" alt="Review rating" width="16">
+                    <img src="./assets/svg/illustrations/star.svg" alt="Review rating" width="16">
+                  </div>
+                  <div class="ms-1">
+                    <span class="fw-semi-bold text-white me-1">4.91</span>
+                    <span class="text-white-70">(1.5k+ reviews)</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card-body">
+              <div class="mb-3">
+                <h3 class="card-title">
+                  <span class="text-dark">AZ-900 : Microsoft Azure fundamentals</span>
+                </h3>
+              </div>
+              <div class="row align-items-center">
+                <div class="col-auto">
+                  <ul class="list-inline list-separator small ms-auto">
+                    <li class="list-inline-item">
+                      <i class="bi-book me-1"></i> 6 Tests
+                    </li>
+                    <li class="list-inline-item">
+                      <i class="bi-clock me-1"></i> 300 questions
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="card-footer pt-0">
+              <div class="d-flex justify-content-between align-items-center">
+                <a class="btn btn-primary btn-sm btn-transition" href="az-900-microsoft-azure-fundamentals-free-practice-tests.html">Course details</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col mb-5">
+          <div class="card card-bordered">
+            <div class="card-pinned">
+              <img class="card-img-top" src="./assets/svg/components/card-13.svg" alt="Image Description">
+              <div class="card-pinned-bottom-start">
+                <div class="d-flex align-items-center flex-wrap">
+                  <div class="d-flex gap-1">
+                    <img src="./assets/svg/illustrations/star.svg" alt="Review rating" width="16">
+                    <img src="./assets/svg/illustrations/star.svg" alt="Review rating" width="16">
+                    <img src="./assets/svg/illustrations/star.svg" alt="Review rating" width="16">
+                    <img src="./assets/svg/illustrations/star.svg" alt="Review rating" width="16">
+                    <img src="./assets/svg/illustrations/star.svg" alt="Review rating" width="16">
+                  </div>
+                  <div class="ms-1">
+                    <span class="fw-semi-bold text-white me-1">4.91</span>
+                    <span class="text-white-70">(1.5k+ reviews)</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card-body">
+              <div class="mb-3">
+                <h3 class="card-title">
+                  <span class="text-dark">AZ-900 : Microsoft Azure fundamentals</span>
+                </h3>
+              </div>
+              <div class="row align-items-center">
+                <div class="col-auto">
+                  <ul class="list-inline list-separator small ms-auto">
+                    <li class="list-inline-item">
+                      <i class="bi-book me-1"></i> 6 Tests
+                    </li>
+                    <li class="list-inline-item">
+                      <i class="bi-clock me-1"></i> 300 questions
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="card-footer pt-0">
+              <div class="d-flex justify-content-between align-items-center">
+                <a class="btn btn-primary btn-sm btn-transition" href="az-900-microsoft-azure-fundamentals-free-practice-tests.html">Course details</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col mb-5">
+          <div class="card card-bordered">
+            <div class="card-pinned">
+              <img class="card-img-top" src="./assets/svg/components/card-13.svg" alt="Image Description">
+              <div class="card-pinned-bottom-start">
+                <div class="d-flex align-items-center flex-wrap">
+                  <div class="d-flex gap-1">
+                    <img src="./assets/svg/illustrations/star.svg" alt="Review rating" width="16">
+                    <img src="./assets/svg/illustrations/star.svg" alt="Review rating" width="16">
+                    <img src="./assets/svg/illustrations/star.svg" alt="Review rating" width="16">
+                    <img src="./assets/svg/illustrations/star.svg" alt="Review rating" width="16">
+                    <img src="./assets/svg/illustrations/star.svg" alt="Review rating" width="16">
+                  </div>
+                  <div class="ms-1">
+                    <span class="fw-semi-bold text-white me-1">4.91</span>
+                    <span class="text-white-70">(1.5k+ reviews)</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card-body">
+              <div class="mb-3">
+                <h3 class="card-title">
+                  <span class="text-dark">AZ-900 : Microsoft Azure fundamentals</span>
+                </h3>
+              </div>
+              <div class="row align-items-center">
+                <div class="col-auto">
+                  <ul class="list-inline list-separator small ms-auto">
+                    <li class="list-inline-item">
+                      <i class="bi-book me-1"></i> 6 Tests
+                    </li>
+                    <li class="list-inline-item">
+                      <i class="bi-clock me-1"></i> 300 questions
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="card-footer pt-0">
+              <div class="d-flex justify-content-between align-items-center">
+                <a class="btn btn-primary btn-sm btn-transition" href="az-900-microsoft-azure-fundamentals-free-practice-tests.html">Course details</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- section 2 ends-->
+
+    <!-- section 3-->
+    <div class="container content-space-1">
+      <div class="w-md-75 text-center mx-md-auto mb-6">
+        <h2>Student reviews</h2>
+        <p>Our students pass in the first exam attempt</p>
+      </div>
+      <div class="overflow-hidden mb-9">
+        <div class="position-relative bg-light text-center rounded-2 zi-2">
+          <div class="container content-space-2">
+            <div class="text-center">
+              <img class="mb-5" src="./assets/img/review.png" alt="Illustration" style="width: 12.5rem;">
+            </div>
+            <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <figure class="w-md-75 text-center mx-md-auto">
+                    <blockquote class="blockquote mb-7">“ 1 The best part about Front Course is the selection. You can find a course for anything you want to learn! Thank you Front Course! You've renewed my passion for learning and my dream of becoming a web developer. ”</blockquote>
+                    <figcaption class="blockquote-footer mt-2">
+                      Adnan Khan
+                      <span class="blockquote-footer-source">AZ-900 : Microsoft Azure Fundamentals</span>
+                    </figcaption>
+                  </figure>
+                </div>
+                <div class="carousel-item">
+                  <figure class="w-md-75 text-center mx-md-auto">
+                    <blockquote class="blockquote mb-7">“ 1 The best part about Front Course is the selection. You can find a course for anything you want to learn! Thank you Front Course! You've renewed my passion for learning and my dream of becoming a web developer. ”</blockquote>
+                    <figcaption class="blockquote-footer mt-2">
+                      Adnan Khan
+                      <span class="blockquote-footer-source">AZ-900 : Microsoft Azure Fundamentals</span>
+                    </figcaption>
+                  </figure>
+                </div>
+                <div class="carousel-item">
+                  <figure class="w-md-75 text-center mx-md-auto">
+                    <blockquote class="blockquote mb-7">“ 1 The best part about Front Course is the selection. You can find a course for anything you want to learn! Thank you Front Course! You've renewed my passion for learning and my dream of becoming a web developer. ”</blockquote>
+                    <figcaption class="blockquote-footer mt-2">
+                      Adnan Khan
+                      <span class="blockquote-footer-source">AZ-900 : Microsoft Azure Fundamentals</span>
+                    </figcaption>
+                  </figure>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+          </div>
+
+          <figure class="position-absolute top-0 start-0 mt-10 ms-10">
+            <svg width="70" height="70" viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M60.6655 74.9992C80.4557 74.9992 96.4988 58.9561 96.4988 39.1659C96.4988 19.3757 80.4557 3.33252 60.6655 3.33252C40.8753 3.33252 24.8322 19.3757 24.8322 39.1659C24.8322 58.9561 40.8753 74.9992 60.6655 74.9992Z" stroke="#97a4af" stroke-width="5" stroke-miterlimit="10"></path>
+              <path d="M158.5 197.5C168.165 197.5 176 189.665 176 180C176 170.335 168.165 162.5 158.5 162.5C148.835 162.5 141 170.335 141 180C141 189.665 148.835 197.5 158.5 197.5Z" stroke="#97a4af" stroke-width="5" stroke-miterlimit="10"></path>
+            </svg>
+          </figure>
+          <figure class="position-absolute bottom-0 end-0 mb-n7 me-n7" style="width: 10rem;">
+            <img class="img-fluid" src="./assets/svg/components/dots.svg" alt="Image Description">
+          </figure>
+        </div>
+      </div>
+    </div>
+    <!-- section 3 ends-->
+
+  </main>
+  <!-- ========== END MAIN CONTENT ========== -->
+
+
+  <!-- ========== FOOTER ========== -->
+  <footer class="bg-dark">
+    <div class="container pb-1 pb-lg-5">
+      <div class="row content-space-t-2">
+        <div class="col-lg-4 mb-7 mb-lg-0">
+          <div class="mb-5">
+            <a class="navbar-brand" href="./index.html" aria-label="Space">
+              <img class="navbar-brand-logo" src="./assets/img/logo.webp" alt="Image Description">
+            </a>
+          </div>
+          <ul class="list-unstyled list-py-1">
+            <li><a class="link-sm link-light" href="about.html">About Us</a></li>
+            <li><a class="link-sm link-light" href="terms-and-conditions.html">Terms &amp; Conditions</a></li>
+            <li><a class="link-sm link-light" href="refund-policy.html">Refund Policy</a></li>
+            <li><a class="link-sm link-light" href="privacy-policy.html">Privacy Policy</a></li>
+            <li><a class="link-sm link-light" href="contact.html">Contact Us</a></li>
+          </ul>
+          <ul class="list-inline mb-0">
+            <li class="list-inline-item">
+              <a class="btn btn-soft-light btn-xs btn-icon" href="#">
+                <i class="bi-facebook"></i>
+              </a>
+            </li>
+            <li class="list-inline-item">
+              <a class="btn btn-soft-light btn-xs btn-icon" href="#">
+                <i class="bi-linkedin"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="col-lg-4 mb-7 mb-sm-0">
+          <h5 class="text-white mb-3">Microsoft Practice Tests</h5>
+          <ul class="list-unstyled list-py-1 mb-0">
+            <li><a class="link-sm link-light" href="#">AZ-900 : Microsoft Azure Fundamentals</a></li>
+            <li><a class="link-sm link-light" href="#">AZ-900 : Microsoft Azure Fundamentals</a></li>
+            <li><a class="link-sm link-light" href="#">AZ-900 : Microsoft Azure Fundamentals</a></li>
+            <li><a class="link-sm link-light" href="#">AZ-900 : Microsoft Azure Fundamentals</a></li>
+            <li><a class="link-sm link-light" href="#">AZ-900 : Microsoft Azure Fundamentals</a></li>
+            <li><a class="link-sm link-light" href="#">AZ-900 : Microsoft Azure Fundamentals</a></li>
+            <li><a class="link-sm link-light" href="#">AZ-900 : Microsoft Azure Fundamentals</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-4 mb-7 mb-sm-0">
+          <h5 class="text-white mb-3">AWS Practice Tests</h5>
+          <ul class="list-unstyled list-py-1 mb-0">
+            <li><a class="link-sm link-light" href="#">AWS Certified Cloud Practitioner </a></li>
+            <li><a class="link-sm link-light" href="#">AWS Certified Cloud Practitioner </a></li>
+            <li><a class="link-sm link-light" href="#">AWS Certified Cloud Practitioner </a></li>
+            <li><a class="link-sm link-light" href="#">AWS Certified Cloud Practitioner </a></li>
+            <li><a class="link-sm link-light" href="#">AWS Certified Cloud Practitioner </a></li>
+            <li><a class="link-sm link-light" href="#">AWS Certified Cloud Practitioner </a></li>
+            <li><a class="link-sm link-light" href="#">AWS Certified Cloud Practitioner </a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="border-top border-white-10 my-7"></div>
+      <div class="w-md-85 text-lg-center mx-lg-auto">
+        <p class="text-muted small">&copy; iCertify. 2021. All rights reserved.</p>
+        <p class="text-muted small">Disclaimer: We are not associated with Microsoft, Amazon Web Services or Google. The content presented on this site is not in any way related to respective vendors.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ========== END FOOTER ========== -->
+
+
+  <!-- ========== SECONDARY CONTENTS ========== -->
+
+  <!-- Login/Signup modals -->
+  <div class="modal fade" id="signupModal" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-close">
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+
+          <!-- Login Modal -->
+          <div id="signupModalFormLoginWithEmail">
+            <div class="text-center mb-7">
+              <h2>Log in</h2>
+              <p>Don't have an account yet?
+                <a class="js-animation-link link" href="javascript:;" role="button"
+                   data-hs-show-animation-options='{
+                         "targetSelector": "#signupModalFormSignup",
+                         "groupName": "idForm"
+                       }'>Sign up</a>
+              </p>
+            </div>
+            <form class="js-validate needs-validation" novalidate>
+              <div class="mb-3">
+                <label class="form-label" for="signupModalFormLoginEmail">Your email</label>
+                <input type="email" class="form-control form-control-lg" name="email" id="" placeholder="email@site.com" aria-label="email@site.com" required>
+                <span class="invalid-feedback">Please enter a valid email address.</span>
+              </div>
+              <div class="mb-3">
+                <div class="d-flex justify-content-between align-items-center">
+                  <label class="form-label" for="signupModalFormLoginPassword">Password</label>
+
+                  <a class="js-animation-link form-label-link" href="javascript:;"
+                     data-hs-show-animation-options='{
+                       "targetSelector": "#signupModalFormResetPassword",
+                       "groupName": "idForm"
+                     }'>Forgot Password?</a>
+                </div>
+
+                <input type="password" class="form-control form-control-lg" name="password" id="signupModalFormLoginPassword" placeholder="8+ characters required" aria-label="8+ characters required" required minlength="8">
+                <span class="invalid-feedback">Please enter a valid password.</span>
+              </div>
+              <div class="d-grid mb-3">
+                <a href="index.html" class="btn btn-primary form-control-lg">Log in</a>
+              </div>
+            </form>
+            <a class="btn btn-white btn-lg w-100" href="#">
+              <span class="d-flex justify-content-center align-items-center">
+                <img class="avatar avatar-xss me-2" src="./assets/svg/brands/google-icon.svg" alt="Image Description">
+                Log in with Google
+              </span>
+            </a>
+          </div>
+          <!-- End Login Modal -->
+
+          <!-- Sign up -->
+          <div id="signupModalFormSignup" style="display: none; opacity: 0;">
+            <div class="text-center mb-7">
+              <h2>Sign up</h2>
+              <p>Already have an account?
+                <a class="js-animation-link link" href="javascript:;" role="button"
+                   data-hs-show-animation-options='{
+                         "targetSelector": "#signupModalFormLoginWithEmail",
+                         "groupName": "idForm"
+                       }'>Log in</a>
+              </p>
+            </div>
+            <form class="js-validate need-validate" novalidate>
+              <div class="mb-3">
+                <label class="form-label" for="signupModalFormSignupEmail">Your email</label>
+                <input type="email" class="form-control form-control-lg" name="email" id="signupModalFormSignupEmail" placeholder="email@site.com" aria-label="email@site.com" required>
+                <span class="invalid-feedback">Please enter a valid email address.</span>
+              </div>
+              <div class="mb-3">
+                <label class="form-label" for="signupModalFormSignupPassword">Password</label>
+                <input type="password" class="form-control form-control-lg" name="password" id="signupModalFormSignupPassword" placeholder="8+ characters required" aria-label="8+ characters required" required>
+                <span class="invalid-feedback">Your password is invalid. Please try again.</span>
+              </div>
+              <div class="mb-3" data-hs-validation-validate-class>
+                <label class="form-label" for="signupModalFormSignupConfirmPassword">Confirm password</label>
+                <input type="password" class="form-control form-control-lg" name="confirmPassword" id="signupModalFormSignupConfirmPassword" placeholder="8+ characters required" aria-label="8+ characters required" required
+                       data-hs-validation-equal-field="#signupModalFormSignupPassword">
+                <span class="invalid-feedback">Password does not match the confirm password.</span>
+              </div>
+              <div class="mb-3">
+                <ul class="small">
+                  <li>Minimum 8 characters long - the more, the better</li>
+                  <li>At least one lowercase character</li>
+                  <li>At least one uppercase character</li>
+                  <li>At least one number or symbol,</li>
+                </ul>
+              </div>
+              <div class="mb-3">
+                <img src="assets/img/newCaptchaAnchor.gif" alt="" class="img-fluid">
+              </div>
+              <div class="d-grid mb-3">
+                <button type="submit" class="btn btn-primary form-control-lg">Sign up</button>
+              </div>
+            </form>
+            <div class="d-grid gap-3">
+              <a class="btn btn-white btn-lg" href="#">
+                <span class="d-flex justify-content-center align-items-center">
+                  <img class="avatar avatar-xss me-2" src="./assets/svg/brands/google-icon.svg" alt="Image Description">
+                  Sign up with Google
+                </span>
+              </a>
+              <div class="text-center">
+                <p class="small mb-0">By continuing you agree to our <a href="#">Terms and Conditions</a></p>
+              </div>
+            </div>
+          </div>
+          <!-- End Sign up -->
+
+          <!-- Reset Password -->
+          <div id="signupModalFormResetPassword" style="display: none; opacity: 0;">
+            <div class="text-center mb-7">
+              <h2>Forgot password?</h2>
+              <p>Enter the email address you used when you joined and we'll send you instructions to reset your password.</p>
+            </div>
+            <form class="js-validate need-validate" novalidate>
+              <div class="mb-3">
+                <div class="d-flex justify-content-between align-items-center">
+                  <label class="form-label" for="signupModalFormResetPasswordEmail" tabindex="0">Your email</label>
+                  <a class="js-animation-link form-label-link" href="javascript:;"
+                     data-hs-show-animation-options='{
+                         "targetSelector": "#signupModalFormLoginWithEmail",
+                         "groupName": "idForm"
+                       }'>
+                    <i class="bi-chevron-left small"></i> Back to Log in
+                  </a>
+                </div>
+                <input type="email" class="form-control form-control-lg" name="email" id="signupModalFormResetPasswordEmail" tabindex="1" placeholder="Enter your email address" aria-label="Enter your email address" required>
+                <span class="invalid-feedback">Please enter a valid email address.</span>
+              </div>
+
+              <div class="d-grid">
+                <button type="submit" class="btn btn-primary form-control-lg">Submit</button>
+              </div>
+            </form>
+          </div>
+          <!-- End Reset Password -->
+
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- End Login/Signup modals -->
+
+
+  <!-- contact us modal -->
+  <div class="modal fade" id="contactUsModal" tabindex="-1" aria-labelledby="contactUsModal" aria-hidden="true">
+  <div class="modal-dialog modal-lg modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Hi Anubhav, ask us anything!</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <form class="js-validate needs-validation" novalidate="">
+          <div class="mb-3">
+            <label class="form-label" for="signupModalFormLoginEmail">Subject</label>
+            <input type="text" class="form-control form-control-lg" name="subject" id="" placeholder="" aria-label="subject" required="required">
+          </div>
+          <div class="mb-3">
+            <div class="mb-3">
+              <label class="form-label" for="signupModalFormLoginPassword">Your query</label>
+              <textarea name="name" class="form-control" rows="8" cols="80"></textarea>
+            </div>
+          </div>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Submit</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- End contact us modal -->
+
+
+  <!-- Go To -->
+  <a class="js-go-to go-to position-fixed" href="javascript:;" style="visibility: hidden;"
+     data-hs-go-to-options='{
+       "offsetTop": 700,
+       "position": {
+         "init": {
+           "right": "2rem"
+         },
+         "show": {
+           "bottom": "2rem"
+         },
+         "hide": {
+           "bottom": "-2rem"
+         }
+       }
+     }'>
+    <i class="bi-chevron-up"></i>
+  </a>
+  <!-- End Go To -->
+
+  <!-- ========== END SECONDARY CONTENTS ========== -->
+
+
+
+    <!-- ========== SCRIPTS ========== -->
+
+    <!-- Compulsory JS -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
+    <script src="./assets/vendor/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./assets/vendor/hs-header/dist/hs-header.min.js"></script>
+    <script src="./assets/vendor/hs-mega-menu/dist/hs-mega-menu.min.js"></script>
+    <script src="./assets/vendor/hs-show-animation/dist/hs-show-animation.min.js"></script>
+    <script src="./assets/vendor/hs-go-to/dist/hs-go-to.min.js"></script>
+    <script src="./assets/js/theme.min.js"></script>
+    <script src="./assets/js/custom.js"></script>
+    <script src="./assets/js/typeahead.js"></script>
+
+    <!-- End Compulsory JS -->
+
+
+
+</body>
+</html>

@@ -1,0 +1,51 @@
+version: '3.8'
+services:
+  # mongodb:
+  #   image: mongo
+  #   ports:
+  #     - '27017:27017'
+  #   volumes:
+  #     - mongo-data:/data/db
+    # networks:
+    #   - mongo-network
+
+  backend:
+    # env_file: "./.env"
+    build: "./backend-api"
+      # context: "./backend-api"
+      # dockerfile: "Dockerfile"
+    image: backend
+    environment:
+      - mongodb://mongodb:27017/icertify
+      - http://localhost:8080
+    ports:
+      - '3000:3000'
+    # depends_on:
+    #   - mongodb
+    # volumes:
+    #   - backend-volume:/usr/src/backend-api
+    # networks:
+    #   - mongo-network
+
+  # frontend:
+  #   env_file: "./frontend/.env"
+  #   build:
+  #     context: "./frontend"
+  #     dockerfile: "Dockerfile"
+  #   image: frontend
+  #   ports:
+  #     - $REACT_DOCKER_PORT:$REACT_LOCAL_PORT
+  #   depends_on:
+  #     - backend
+  #   volumes:
+  #     - /usr/src/frontend
+  #   networks:
+  #     - mongo-network
+  
+# volumes:
+#   mongo-data:
+#     driver: local
+  # backend-volume:
+# networks:
+#   mongo-network:
+#     driver: bridge
